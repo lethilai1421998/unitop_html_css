@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <title> theo cấu trúc theo bậc</title>
+</head>
+
+<body>
+    <style>
+        form input {
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            //1. toàn bộ menu cấp 1 => màu đỏ
+            //$("#main-menu>li>a").css('color', 'red');
+            //2. toàn bộ menu cấp 1 => màu đỏ
+            //   $("#main-menu a").css('color', 'red');
+            //4. in vào giá trị  input nếu có giá trị lable
+            $('form label + input').val('đã có label');
+            //5. toàn bộ những input có value đứng sau label
+            // $('form label ~ input').val('đứng sau label');
+        });
+    </script>
+    <ul id="main-menu">
+        <li><a href=""> Menu 1</a></li>
+        <li><a href=""> Menu 2</a>
+            <ul class="sub_menu">
+                <li><a href=""> Menu 2.1</a></li>
+                <li><a href=""> Menu 2.2</a></li>
+            </ul>
+        </li>
+        <li><a href=""> Menu 3</a></li>
+        <li><a href=""> Menu 4</a></li>
+        <li><a href=""> Menu 5</a></li>
+        <li><a href=""> Menu 6</a></li>
+    </ul>
+    <form action="">
+        <label for="username"> Username</label>
+        <input type="text" name="username" id="username">
+        <label for="email"> email</label>
+        <input type="email" name="email" id="email">
+
+
+    </form>
+</body>
+
+</html>

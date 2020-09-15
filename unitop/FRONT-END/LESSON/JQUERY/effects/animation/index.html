@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <title>animate</title>
+</head>
+
+<body>
+    <style>
+        #wrapper {
+            width: 960px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        #box {
+            position: absolute;
+            width: 400px;
+            padding: 40px;
+            background: #2980b9;
+            text-align: center;
+            color: white;
+            top: 100px;
+            left: 0px;
+
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#effect-animate").click(function () {
+                $("#box").animate({
+                        'width': '100px',
+                        ' padding': '100px',
+                        left: '500'
+                    },
+                    1000,
+                    function () {
+                        alert("ok");
+                    });
+
+            });
+        });
+    </script>
+    <div id="wrapper">
+        <h1> hiệu ứng slide trong jquery</h1>
+        <a href="" id="effect-animate"> animate</a>
+        <div id="box">Box</div>
+
+    </div>
+</body>
+
+</html>

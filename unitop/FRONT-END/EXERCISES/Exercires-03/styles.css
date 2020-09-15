@@ -1,0 +1,28 @@
+#wrapper {
+    width: 960px;
+    margin: 0px auto;
+}
+
+header {
+    background-color: bisque;
+}
+
+header:hover {
+    background-color: aqua;
+}
+
+.text-color {
+    color: burlywood;
+}
+
+.text-color-blue {
+    color: blue;
+}
+
+article a:hover {
+    color: aquamarine;
+}
+
+input:checked+label {
+    color: red;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <title> phương thức xử lý thuộc tính</title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            // click vào thẻ a hiển thị lên link của hình ảnh thông qua alret
+            // $('a.get_link_img').click(function () {
+            //     var link_img = $("img").attr('width', '500');
+            //     alert(link_img);
+            // });
+            // hủy giá trị 
+            $('a.remove_attr').click(function () {
+                $("img").removeAttr('src');
+                return false;
+            });
+        });
+    </script>
+    <img data-href="adc.html" src="./images/logo.png" alt="" title="">
+    <a class="get_link_img" href="#"> lấy link ảnh</a>
+    <a href="" class="remove_attr">huy giá trị</a>
+
+
+</body>
+
+</html>

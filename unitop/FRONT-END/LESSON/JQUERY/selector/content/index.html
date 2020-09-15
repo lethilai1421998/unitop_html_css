@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <title>Selector theo nội dung</title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            //1. tìm phần tử k có nội dung và border 1px solid #333
+            //$("ul li:empty").css('border', '1px solid #333');
+            // $("ul li:empty").text('không có nội dung').css('color', 'red');
+            //2. tìm các phần tử có chứ nội dung "phần "=> màu đỏ
+            // $("ul li:contains('tử 3')").css('color', 'red');
+            //3. tìm tất cả các phần tử cps phần tử con, hoặc nội dung =>màu đỏ
+            //  $("ul li:parent").css('color', 'red');
+            //4. tìm phần tử có ít nhất phần tử con là selector cho trước
+            $("ul.sub:has('.color-red')").css('border', '1px solid red');
+
+        });
+    </script>
+    <ul class="">
+        <li>Phần tử 1</li>
+        <li>
+            <ul class="sub">
+                <li class="color-red"> phần tử 2.1</li>
+                <li> phần tử 2.2</li>
+            </ul>
+        </li>
+        <li>Phần tử 3</li>
+        <li>
+            <ul>
+                <li> phần tử 4.1</li>
+                <li> phần tử 4.2</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

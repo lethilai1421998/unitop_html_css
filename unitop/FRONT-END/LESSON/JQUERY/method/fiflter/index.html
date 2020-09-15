@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <title>phương thức tìm kiếm và lọc</title>
+</head>
+
+<body>
+    <style>
+        ul.sub-menu {
+            display: none;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            //eq
+            //$('p').eq(2).css('color', 'red');
+            //not
+            // $('p').not('.hightlight').css('color', 'green');
+            //filter
+            // $('p').filter('.hightlight').css('color', 'red');
+            //next
+            // $('p').filter('.hightlight').next().css('color', 'red');
+            //nextAll
+            //  $('p').filter('.hightlight').nextAll().css('color', 'green');
+            //$('p').eq(0).nextAll('.hightlight').css('color', 'gold');
+            //pre
+            // $('p').filter('.hightlight').pre().css('color', 'red');
+            //nextAll
+            //('.hightlight').css('color', 'gold');
+            //$('p').eq(0).nextAll('.hightlight').css('color', 'gold');
+            //is
+            // $('p').click(function () {
+            //     if ($(this).is('.hightlight')) {
+            //         alert('đây là hightlight');
+            //     }
+            // });
+            $("#main-menu li").click(function () {
+                $(this).children('.sub-menu').show();
+                // $(this).children('.sub-menu').find('a').css('color', 'red');
+            });
+            //parent, parents
+            $("#main-menu a").click(function () {
+                $(this).parents('ul').css('border', '1px solid red');
+                return false;
+            });
+
+
+
+
+        });
+    </script>
+    <!-- <p>Đoạn văn 1</p>
+    <p class="hightlight">Đoạn văn 2</p>
+    <p>Đoạn văn 3</p>
+    <p>Đoạn văn 4</p>
+    <p class="hightlight">Đoạn văn 5</p> -->
+    <ul id="main-menu">
+        <li><a href="">menu 1</a></li>
+        <li><a href="">menu 2</a>
+            <ul class="sub-menu">
+                <li><a href=""> menu 2.1</a></li>
+                <li><a href=""> menu 2.2</a></li>
+                <li><a href=""> menu 2.3</a></li>
+                <li><a href=""> menu 2.4</a></li>
+                <li><a href=""> menu2.5 </a></li>
+            </ul>
+        <li><a href="">menu 3</a></li>
+        <li><a href="">menu 4</a>
+            <ul class="sub-menu">
+                <li><a href=""> menu 4.1</a></li>
+                <li><a href=""> menu 4.2</a></li>
+                <li><a href=""> menu 4.3</a></li>
+                <li><a href=""> menu 4.4</a></li>
+                <li><a href=""> menu 4.5 </a></li>
+            </ul>
+        </li>
+        <li><a href="">menu 5</a></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

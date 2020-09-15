@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <title>sự kiện hover chuột</title>
+</head>
+
+<body>
+    <style>
+        #target {
+            background: gray;
+            padding: 20px;
+            display: inline-block;
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            // $("a#target").hover({
+            //hover in
+            // function () {
+            //     console.log("hover in");
+            // },
+            // //hover out
+            // function () {
+            //     console.log("hover out");
+            // }
+            // });
+            $("a#target").hover({
+                function () {
+                    console.log("hover out");
+                }
+            });
+        });
+    </script>
+    <h2>SỰ kiện target</h2>
+    <a href="" id="target">#target</a>
+</body>
+
+</html>

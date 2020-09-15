@@ -1,0 +1,64 @@
+.container {
+  margin: 0px auto;
+  width: 960px;
+  padding: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.list-product {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-item {
+  width: 280px;
+  min-height: auto;
+  border: 1px solid;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.product-item:hover {
+  transform: rotate(2deg);
+}
+
+.product-item a {
+  display: block;
+  text-decoration: none;
+}
+
+.product-item:hover {
+  border: 1px solid tomato;
+}
+
+.price {
+  text-align: center;
+  color: sandybrown;
+  font-size: 28px;
+}
+
+.product-name {
+  font-size: large;
+  text-align: center;
+}
+
+.buy-now {
+  text-align: center;
+  font-size: large;
+  color: brown;
+}
+
+.discount {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <title>Nhóm phương thức xử lý tọa độ khoảng cách</title>
+</head>
+
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        body {
+            font-style: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 25px;
+        }
+
+        #wrapper {
+            margin: 0 auto;
+            width: 960px;
+        }
+
+        #header,
+        #footer {
+            background: #333;
+            color: #ffffff;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 20px 10px;
+        }
+
+        #content {
+            padding: 20px 0;
+        }
+
+        #content p {
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .widget {
+            width: 100px;
+            height: 50px;
+            background: #f00;
+            position: absolute;
+            top: 100px;
+            left: 200px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            var widget_top_content, widget_left_content;
+            widget_top_content = $('.widget').position();
+            widget_left_content = $('.widget').position();
+            console.log(widget_top_content);
+
+
+
+
+
+
+
+
+
+            // var conntent_top = $('#content').offset().top;
+            // var footer_top = $('#footer').offset().top;
+            // console.log(conntent_top + "-" + footer_top);
+            // // var window_scroll_top, window_scroll_left;
+            // $(window).scroll(function () {
+            //     window_scroll_top = $(window).scrollTop();
+            //     window_scroll_left = $(window).scrollLeft();
+            //     console.log(window_scroll_top + "-" + window_scroll_left);
+            // });
+
+
+        });
+    </script>
+
+    <div id="wrapper">
+        <div id="header">
+            header
+        </div>
+        <!-- -- end header-- -->
+        <div id="content">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis praesentium nisi corporis
+                repudiandae omnis sed beatae molestias quisquam doloribus! Perferendis dolorum tempora, rem ad magni et
+                velit voluptate fugiat nemo reiciendis neque. Libero officiis quisquam esse accusantium delectus quam
+                ratione consequatur? Facere vel aut blanditiis minima expedita recusandae totam porro ipsa unde ea.
+                Quia, deserunt optio magni ex omnis nihil quos aperiam amet, et fuga architecto beatae soluta vel modi.
+                Laudantium natus, facilis commodi aliquid porro incidunt animi ea aperiam nostrum obcaecati consequatur
+                unde voluptas dolore doloribus nulla in culpa provident. Omnis vitae aliquam laboriosam, labore tenetur
+                nisi tempore perspiciatis.</p>
+            <div class="widget"> widget</div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis praesentium nisi corporis
+                repudiandae omnis sed beatae molestias quisquam doloribus! Perferendis dolorum tempora, rem ad magni et
+                velit voluptate fugiat nemo reiciendis neque. Libero officiis quisquam esse accusantium delectus quam
+                ratione consequatur? Facere vel aut blanditiis minima expedita recusandae totam porro ipsa unde ea.
+                Quia, deserunt optio magni ex omnis nihil quos aperiam amet, et fuga architecto beatae soluta vel modi.
+                Laudantium natus, facilis commodi aliquid porro incidunt animi ea aperiam nostrum obcaecati consequatur
+                unde voluptas dolore doloribus nulla in culpa provident. Omnis vitae aliquam laboriosam, labore tenetur
+                nisi tempore perspiciatis.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis praesentium nisi corporis
+                repudiandae omnis sed beatae molestias quisquam doloribus! Perferendis dolorum tempora, rem ad magni et
+                velit voluptate fugiat nemo reiciendis neque. Libero officiis quisquam esse accusantium delectus quam
+                ratione consequatur? Facere vel aut blanditiis minima expedita recusandae totam porro ipsa unde ea.
+                Quia, deserunt optio magni ex omnis nihil quos aperiam amet, et fuga architecto beatae soluta vel modi.
+                Laudantium natus, facilis commodi aliquid porro incidunt animi ea aperiam nostrum obcaecati consequatur
+                unde voluptas dolore doloribus nulla in culpa provident. Omnis vitae aliquam laboriosam, labore tenetur
+                nisi tempore perspiciatis.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis praesentium nisi corporis
+                repudiandae omnis sed beatae molestias quisquam doloribus! Perferendis dolorum tempora, rem ad magni et
+                velit voluptate fugiat nemo reiciendis neque. Libero officiis quisquam esse accusantium delectus quam
+                ratione consequatur? Facere vel aut blanditiis minima expedita recusandae totam porro ipsa unde ea.
+                Quia, deserunt optio magni ex omnis nihil quos aperiam amet, et fuga architecto beatae soluta vel modi.
+                Laudantium natus, facilis commodi aliquid porro incidunt animi ea aperiam nostrum obcaecati consequatur
+                unde voluptas dolore doloribus nulla in culpa provident. Omnis vitae aliquam laboriosam, labore tenetur
+                nisi tempore perspiciatis.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis praesentium nisi corporis
+                repudiandae omnis sed beatae molestias quisquam doloribus! Perferendis dolorum tempora, rem ad magni et
+                velit voluptate fugiat nemo reiciendis neque. Libero officiis quisquam esse accusantium delectus quam
+                ratione consequatur? Facere vel aut blanditiis minima expedita recusandae totam porro ipsa unde ea.
+                Quia, deserunt optio magni ex omnis nihil quos aperiam amet, et fuga architecto beatae soluta vel modi.
+                Laudantium natus, facilis commodi aliquid porro incidunt animi ea aperiam nostrum obcaecati consequatur
+                unde voluptas dolore doloribus nulla in culpa provident. Omnis vitae aliquam laboriosam, labore tenetur
+                nisi tempore perspiciatis.</p>
+        </div>
+        <!-- ---- end content--- -->
+        <div id="footer">
+            footer
+        </div>
+        <!-- --- end footer-- -->
+    </div>
+
+
+</body>
+
+</html>

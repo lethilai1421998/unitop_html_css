@@ -1,0 +1,212 @@
+/* tổng quan đến chi tiết
+ từ ngoài vào trong
+ từ sau ra trước
+ từ trên xuống dưới
+ từ trái sang phải */
+body {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.container {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* =====HEADER==== */
+#header {
+    background-color: #23282d;
+    padding-top: 28px;
+    padding-bottom: 9px;
+    margin-bottom: 35px;
+}
+
+form#search input {
+    background: #131619;
+    width: 248px;
+    border: none;
+    outline: none;
+    padding: 9px 42px 9px 15px;
+    color: #ffffff;
+}
+
+form#search {
+    position: relative;
+}
+
+form#search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #393b3d;
+    background: #131619;
+    border: none;
+    padding: 0px 12px;
+    outline: none;
+}
+
+nav {
+    margin-top: 7px;
+    flex: 100%;
+    border-right: 10px solid #ff2d2d;
+}
+
+ul#main-menu li a {
+    padding: 6px 20px;
+    color: #eeeeee;
+    display: block;
+}
+
+ul#main-menu li:first-child a {
+    padding-left: 0;
+}
+
+ul#main-menu li:hover a,
+ul#main-menu li.active a {
+    color: #4596c6;
+    text-decoration: none;
+}
+
+/* =========================featured post================== */
+#wp-featured-post {
+    margin-bottom: 30px;
+}
+
+.box .box-head h3 {
+    color: #eeeeee;
+    background: #23282d;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 1px 15px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.box .box-body {
+    padding-top: 20px;
+}
+
+.box.featured-post .box-body {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #131619;
+}
+
+ul.list-featured-post li {
+    flex: 360px 0 1;
+}
+
+ul.list-featured-post li a.title-fetured-post {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #5f5f5f;
+    font-weight: 600;
+    display: block;
+    margin-top: 20px;
+}
+
+ul.list-featured-post li .featured-thumb {
+    display: block;
+    overflow: hidden;
+}
+
+ul.list-featured-post li .featured-thumb img {
+    transition: all 0.25s;
+}
+
+ul.list-featured-post li .featured-thumb:hover img {
+    transform: scale(1.05);
+}
+
+/* ======================wrapper content================== */
+#content {
+    flex: 765px;
+    padding-right: 15px;
+}
+
+.box.news-post .box-head {
+    border-bottom: 2px solid #4db2ec;
+}
+
+.box.news-post .box-head h3 {
+    background: #4db2ec;
+}
+
+ul.list-post li {
+    display: flex;
+    padding-bottom: 40px;
+}
+
+ul.list-post li a {
+    text-decoration: none;
+}
+
+ul.list-post li .post-thumb {
+    display: block;
+    flex: 280px;
+    padding-right: 15px;
+}
+
+ul.list-post li .more-info {
+    padding-left: 15px;
+}
+
+ul.list-post li .more-info .title-post {
+    color: #131619;
+    display: block;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+ul.list-post li:hover .more-info a.title-post {
+    color: #4596c6;
+}
+
+ul.list-post li:hover .more-info .post-pulished {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 0;
+}
+
+.post-author {
+    color: #111111;
+}
+
+.post-date {
+    color: #aaaaaa;
+}
+
+.post-excerpts {
+    font-size: 13px;
+    font-weight: 200;
+    color: #777777;
+}
+
+/* =========================sidebar========================== */
+#sidebar {
+    flex: 375px;
+    padding-left: 15px;
+}
+
+#sidebar a.ads {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.box.top-topic .box-head {
+    border-bottom: 2px solid #ff2d2d;
+}
+
+.box.top-topic .box-head h3 {
+    background: #ff2d2d;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <title>Selector theo định vị</title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            //1. chọn phàn tử có chỉ số 1 cho màu đỏ
+            //    $('div.box p:eq(2)').css('color', 'red');
+            //2. chọn phần tử p đầu tiên => có màu đỏ
+            // $('p:first').css('color', 'red');
+            //3. chọn phần tử p cuois cùng => có màu đỏ
+            //$('p:last').css('color', 'red');
+            //4. chọn phần tử p có chỉ số lớn hơn 1 => có màu đỏ
+            //  $('p:gt(1)').css('color', 'red');
+            //5. chọn phần tử p có chỉ số bé hơn 3 => có màu đỏ
+            //$('p:lt(2)').css('color', 'red');
+            //6. chọn phần tử có chỉ số lẻ=> có màu đỏ
+            // $(':odd').css('color', 'red');
+            //7. chọn phần tử có chỉ số chẵn=> có màu đỏ
+            //$('p:even').css('color', 'red');
+            //8. chọn phần tử p loại trừ chỉ số 2=> có màu đỏ
+            $("p:not('p.p2')").css('color', 'red');
+
+
+        });
+    </script>
+    <p>Đoạn văn 1</p>
+    <p>Đoạn văn 2</p>
+
+    <p>Đoạn văn 3</p>
+    <p class="p2">Đoạn văn 4</p>
+    <p>Đoạn văn 5</p>
+    <p>Đoạn văn 6</p>
+    <div class="box">
+        <p>Đoạn văn 7</p>
+        <p>Đoạn văn 8</p>
+        <p>Đoạn văn 9</p>
+    </div>
+    <p>Đoạn văn 10</p>
+    <p>Đoạn văn 11</p>
+    <p>Đoạn văn 12</p>
+</body>
+
+</html>

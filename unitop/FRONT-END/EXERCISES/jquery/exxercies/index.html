@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/jquery-3.5.1.js"></script>
+    <title>Exercies</title>
+</head>
+
+<body>
+    <style>
+        #wrapper {
+            margin: 0 auto;
+            width: 960px;
+            font-size: 25px;
+        }
+
+        #show {
+            /* width: 350px; */
+            height: auto;
+            overflow: hidden;
+        }
+
+        #show img {
+            max-width: 100%;
+            width: 350px;
+            height: auto;
+        }
+
+        #wp-list-thumb {
+            margin-top: 20px;
+        }
+
+        #wp-list-thumb ul#list-thumb {
+            list-style: none;
+            width: 80px;
+            display: flex;
+            padding: 0px;
+        }
+
+        #wp-list-thumb ul#list-thumb li {
+            margin-right: 10px;
+        }
+
+        #wp-list-thumb ul#list-thumb li a img {
+            /* max-width: 100%;
+            height: auto; */
+            display: block;
+        }
+
+        #wp-list-thumb ul#list-thumb li.active {
+            border: 1px solid #333333;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            var src_img_click, src_img_first;
+            src_img_first = $("#list-thumb li:first-child a img").attr('src');
+            $("#show img").attr('src', src_img_first);
+            $("#list-thumb li:first-child ").addClass('active');
+            $("#list-thumb li a").click(function () {
+                src_img_click = $(this).children("img").attr('src');
+                $("#show img").attr('src', src_img_click);
+                $("#list-thumb li ").removeClass("active");
+                $(this).parent('li').addClass('active');
+                return false;
+            });
+        });
+    </script>
+    <div id="wrapper">
+        <h2>Basic slider product</h2>
+        <div id="wp-slider">
+            <div id="show"><img src="./images/pic.png" alt="" /></div>
+            <div id="wp-list-thumb">
+                <ul id="list-thumb">
+                    <li>
+                        <a href=""><img src="./images/pic-4.png" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./images/pic-2.png" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./images/pic-3.png" alt="" /></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="./images/pic-4.png" alt="" /></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

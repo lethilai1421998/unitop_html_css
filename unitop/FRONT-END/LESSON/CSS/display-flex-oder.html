@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display flex order</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            background: yellowgreen;
+            display: flex;
+        }
+
+        .flex-item {
+            background-color: tan;
+            padding: 30px;
+            width: 100px;
+            font-size: 18px;
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .item-1 {
+            order: 2;
+        }
+
+        .item-2 {
+            order: -1;
+        }
+    </style>
+    <h1>display flex order </h1>
+    <div class="container">
+        <div class="flex-item item-1">1</div>
+        <div class="flex-item item-2">2</div>
+        <div class="flex-item item-3">3</div>
+        <div class="flex-item item-4">4</div>
+        <div class="flex-item item-5">5</div>
+    </div>
+
+</body>
+
+</html>

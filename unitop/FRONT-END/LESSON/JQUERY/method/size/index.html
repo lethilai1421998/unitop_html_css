@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <title>phương thức kích thước</title>
+</head>
+
+<body>
+    <style>
+        .box {
+            border: 1px solid #333;
+            min-height: 100px;
+            width: 200px;
+            margin: 20px 0;
+        }
+
+        #box-1 {
+            padding: 10px 20px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            var height_box1, innerheight_box1, outerheight_box1;
+            height_box1 = $('#box-1').height();
+            innerheight_box1 = $('#box-1').innerHeight();
+            outerheight_box1 = $('#box-1').outerHeight();
+            console.log(height_box1 + "-" + innerheight_box1 + "-" + outerheight_box1);
+            // theo độ cao của #box-1
+            // $('.box').height(height_box1);
+
+        });
+    </script>
+
+
+
+    <h1> Phương thức xử lý kích thước trong jquery</h1>
+    <div class="box" id="box-1"> box 1
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi eligendi quas quibusdam laudantium,
+        repellendus minus harum necessitatibus labore eius doloribus quaerat quia praesentium animi ipsam, dolorem
+        asperiores saepe tenetur similique!
+    </div>
+    <div class="box" id="box-2"> box 2</div>
+    <div class="box" id="box-3"> box 3</div>
+    <div class="box" id="box-4">box 4</div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector next only</title>
+</head>
+
+<body>
+    <style>
+        article img {
+            width: 100px;
+            height: 100px;
+        }
+
+        article img+p {
+            color: aquamarine;
+            font-style: italic;
+        }
+    </style>
+    <article>
+        <h1>selector next only</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo quos officiis ab nulla illo vero
+            necessitatibus dolore ad cumque.</p>
+        <img src="https://i.pinimg.com/originals/72/a7/a4/72a7a49a5717bc8be68348b5289b1609.jpg" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam est optio tempore consectetur omnis sunt
+            perferendis incidunt aut quod minus.</p>
+    </article>
+
+</body>
+
+</html>

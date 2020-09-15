@@ -1,0 +1,26 @@
+* {
+    width: 960px;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-upper {
+    text-transform: capitalize;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-right {
+    text-align: right;
+
+}
+
+.text-line-through {
+    text-decoration: line-through;
+}

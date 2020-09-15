@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./js/jquery-3.5.1.js"></script>
+    <title>sự kiện form submit</title>
+</head>
+
+<body>
+    <style>
+        form input {
+            display: flex;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("form#target").submit(function () {
+                // alert("bạn vừa submit bên #target");
+                var username, password;
+                username = $("#username").val();
+                password = $("#password").val();
+                alert(username + "-" + password);
+                return false;
+            });
+            $("#other").click(function () {
+                $("#target").submit();
+            });
+        });
+    </script>
+    <h2>Sự kiện form submit</h2>
+    <form action="" method="post" id="target">
+        <label for="username"> Username</label>
+        <input type="text" name="username" id="username">
+        <label for="password"> Username</label>
+        <input type="text" name="password" id="password">
+        <input type="submit" value="Login">
+    </form>
+
+    <a href="" id="other">#other</a>
+</body>
+
+</html>

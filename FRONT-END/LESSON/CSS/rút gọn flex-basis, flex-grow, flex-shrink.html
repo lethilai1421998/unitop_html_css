@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rút gọn flex-basis, flex-grow, flex-shrink</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            background-color: blanchedalmond;
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+
+        .flex-item {
+            background-color: tomato;
+            padding: 30px;
+            margin: 10px;
+            flex: 2 1 auto;
+            font-size: 18px;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+    <div class="container">
+        <div class="flex-item ">
+            1
+        </div>
+        <div class="flex-item">
+            2
+        </div>
+    </div>
+</body>
+
+</html>

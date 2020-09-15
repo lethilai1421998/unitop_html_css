@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <title>Nhóm phương thức giá trị</title>
+</head>
+
+<body>
+    <style>
+        input {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            //val
+            $('#form_login').submit(function () {
+                var str_result = ;
+                var username = $('#username').val();
+                var password = $('#password').val();
+                //  alert(username + password);
+                $('#val_username').text(username);
+                $('#val_password').text(password);
+                // str_result =
+                //     "<p> Username: < strong id = 'val_username' >" + username +
+                //     "< /strong></p ><p > Passwword: < strong id = 'val_password' >" + password +
+                //     "< /strong></p > ";
+
+                // $("#result").html(str_result);
+                return false; // hủy reload submit link của thẻ a
+            });
+
+        });
+    </script>
+    <h1>Form đăng nhập</h1>
+    <form action="" id="form_login" method="POST">
+        <label for="username"> UserName</label>
+        <input type="text" name="username" value="" id="username">
+        <label for="password"> password</label>
+        <input type="text" name="password" value="" id="password">
+
+        <input type="submit" name="sm_login" value="Đăng nhập">
+        <div id="result">
+
+        </div>
+
+    </form>
+</body>
+
+</html>

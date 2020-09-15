@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.5.1.js"></script>
+    >selector theo cấp chỉ định</title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            //1. Chon bài viết đầu tiên
+            //$("ul.list-post li:first-child").css('color', 'red');
+            //2. Chon bài viếtcuối cùng
+            //$("ul.list-post li:last-child").css('color', 'red');
+            //3. nth-child(index,odd, even, operation)
+            // $("ul.list-post :nth-child(3n)").css('color', 'red');
+            //4. chọn phần tử là con duy nhất của phần tử cha chỉ định 
+            $("ul.list-post :only-child").css('color', 'red');
+
+        });
+    </script>
+    <ul class="list-post">
+        <li> Bài viết 1</li>
+        <li> Bài viết 2</li>
+        <li> Bài viết 3</li>
+        <li> Bài viết 4</li>
+        <li> Bài viết 5</li>
+        <li> Bài viết 6</li>
+    </ul>
+    <ul class="list-post">
+        <li> Bài viết 1</li>
+    </ul>
+</body>
+
+</html>

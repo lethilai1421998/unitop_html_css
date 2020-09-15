@@ -1,0 +1,58 @@
+/*Iphone (480 x 640) */
+/* @media screen and (min-width: 320px) {
+    body {
+        background: gold;
+    }
+} */
+
+/* Tablet nhỏ (480 x 640) */
+/* @media screen and (min-width: 480px) {
+    body {
+        background: blue;
+    }
+} */
+
+/* Ipad dọc (768 x 1024) */
+/* @media screen and (min-width: 768px) {
+    body {
+        background: black;
+    }
+} */
+
+/* Ipad ngang (1024 x 768) */
+/* @media screen and (min-width: 1024px) {
+    body {
+        background: yellowgreen;
+    }
+} */
+body {
+    background: yellow;
+}
+
+/* Ipad ngang (1024 x 768) */
+@media screen and (max-width: 1024px) {
+    body {
+        background: yellowgreen;
+    }
+}
+
+/* Ipad dọc (768 x 1024) */
+@media screen and (max-width: 768px) {
+    body {
+        background: black;
+    }
+}
+
+/* Tablet nhỏ(480 x 640) */
+@media screen and (max-width: 480px) {
+    body {
+        background: blue;
+    }
+}
+
+/*Iphone (480 x 640) */
+@media screen and (max-width: 320px) {
+    body {
+        background: red;
+    }
+}

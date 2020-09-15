@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class clearfix</title>
+</head>
+
+<body>
+    <style>
+        .box-parent {
+            width: 960px;
+            margin: 0 auto;
+            background-color: red;
+        }
+
+        .box-left {
+            width: 600px;
+            background-color: aquamarine;
+            float: left;
+            min-height: 500px;
+        }
+
+        .box-right {
+            width: 360px;
+            background-color: blueviolet;
+            float: left;
+            min-height: 500px;
+        }
+
+        .clearfix:after {
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+        }
+
+        .clearfix {
+            clear: both;
+            display: block;
+        }
+    </style>
+    <div class="box-parent clearfix">
+        <div class="box-left">left </div>
+        <div class="box-right">right</div>
+        <!-- <div class="clearfix"></div> -->
+    </div>
+</body>
+
+</html>

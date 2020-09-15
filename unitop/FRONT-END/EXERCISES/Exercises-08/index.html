@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai tap 8 ap dung hieu ung css</title>
+</head>
+
+<body>
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .container {
+            width: 960px;
+            margin: 0px auto;
+        }
+
+        .list-product {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .product-item {
+            border: 1px solid grey;
+            margin: 10px 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-item:hover {
+            border: 1px solid tomato;
+        }
+
+        .product-item:hover a>img {
+            transform: rotate(1deg);
+            transition: all 1s;
+        }
+
+        .price {
+            text-align: center;
+            color: goldenrod;
+            padding-top: 10px;
+        }
+
+        .product-name {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .buy-now {
+            background-color: tomato;
+            columns: white;
+            padding: 10px 0;
+            text-align: center;
+            overflow: auto;
+            position: absolute;
+            width: 100%;
+
+        }
+
+        .product-item:hover .buy-now {
+            bottom: 0px;
+        }
+
+        .discount {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+    </style>
+    <div class="container">
+        <h1 class="text-center"> baif tap 8 ap dung hieu uwng css</h1>
+        <ul class="list-product">
+            <li>
+                <div class="product-item">
+                    <a href=""><img src="./images/product1.jpg" alt=""></a>
+                    <div class="price">490.000d</div>
+                    <div class="product-name"> Lorem ipsum dolor sit amet.</div>
+                    <div class="buy-now">Mua ngay</div>
+                    <div class="discount"><img src="./images/sale.png" alt=""></div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href=""><img src="./images/product11.jpg" alt=""></a>
+                    <div class="price">490.000</div>
+                    <div class="product-name"> Lorem ipsum dolor sit amet.</div>
+                    <div class="buy-now">Mua ngay</div>
+                    <div class="discount"><img src="./images/sale.png" alt=""></div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href=""><img src="./images/product5.jpg" alt=""></a>
+                    <div class="price">490.000</div>
+                    <div class="product-name"> Lorem ipsum dolor sit amet.</div>
+                    <div class="buy-now">Mua ngay</div>
+                    <div class="discount"><img src="./images/sale.png" alt=""></div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href=""><img src="./images/product9.jpg" alt=""></a>
+                    <div class="price">490.000</div>
+                    <div class="product-name"> Lorem ipsum dolor sit amet.</div>
+                    <div class="buy-now">Mua ngay</div>
+                    <div class="discount"><img src="./images/sale.png" alt=""></div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href=""><img src="./images/product5.jpg" alt=""></a>
+                    <div class="price">490.000</div>
+                    <div class="product-name"> Lorem ipsum dolor sit amet.</div>
+                    <div class="buy-now">Mua ngay</div>
+                    <div class="discount"><img src="./images/sale.png" alt=""></div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <a href=""><img src="./images/product11.jpg" alt=""></a>
+                    <div class="price">490.000</div>
+                    <div class="product-name"> Lorem ipsum dolor sit amet.</div>
+                    <div class="buy-now">Mua ngay</div>
+                    <div class="discount"><img src="./images/sale.png" alt=""></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

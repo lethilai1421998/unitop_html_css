@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <title>sự kiện click</title>
+</head>
+
+<body>
+    <style>
+        #target,
+        #other {
+            display: inline-block;
+            background: #333333;
+            padding: 5px;
+            margin: 5px;
+            color: #ffffff;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        #target:hover,
+        #other:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("a#target").click(function () {
+                alert("bạn vừa click vào target");
+            });
+            $("a#other").click(function () {
+                // alert("click vào other");
+                $("a#target").click();
+            });
+        });
+    </script>
+    <h2> Sự kiện click vào target</h2>
+    <a href="" id="target">#target</a>
+    <a href="" id="other">#other</a>
+</body>
+
+</html>

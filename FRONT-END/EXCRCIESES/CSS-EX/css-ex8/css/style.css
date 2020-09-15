@@ -1,0 +1,76 @@
+* {
+    padding: 0px;
+}
+
+.container {
+    margin: 0px auto;
+    width: 960px;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.list-product {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.item-product {
+    overflow: hidden;
+    border: 1px solid;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.item-product:hover {
+    border: 1px solid red;
+}
+
+.item-product:hover a>img {
+    transform: rotate(1deg);
+}
+
+.price {
+    text-align: center;
+    font-size: 18px;
+    color: tomato;
+    margin-top: 5px;
+}
+
+.name-product {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0px -20px 0px;
+}
+
+.buy-now {
+    text-align: center;
+    font-size: 20px;
+    color: wheat;
+    position: relative;
+    bottom: -50px;
+    background-color: chocolate;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.item-product:hover .buy-now {
+    bottom: 0px;
+    transition: bottom 0.5s;
+
+}
+
+.discount {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}

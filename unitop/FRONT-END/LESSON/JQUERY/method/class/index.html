@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <title>phương thức làm việc với class</title>
+</head>
+
+<body>
+    <style>
+        .hightlight {
+            color: red;
+            background: yellowgreen;
+        }
+
+        ;
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('p').click(function () {
+                // $(this).addClass('hightlight');
+                // if (!$(this).hasClass('hightlight')) {
+                //     $('p').removeClass('hightlight');
+                //     $($(this).addClass('hightlight'));
+                // }
+                //công tất điện
+                $('p').removeClass('hightlight');
+                $(this).toggleClass('hightlight');
+            });
+        });
+    </script>
+    <p>Đoạn văn bản số 1</p>
+    <p>Đoạn văn bản số 2</p>
+    <p>Đoạn văn bản số 3</p>
+    <p>Đoạn văn bản số 4</p>
+    <h2>Tiêu đề bài viết số 4</h2>
+    <p>Đoạn văn bản số 5</p>
+</body>
+
+</html>

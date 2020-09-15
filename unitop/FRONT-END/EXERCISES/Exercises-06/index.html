@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX-06</title>
+</head>
+
+<body>
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0px;
+        }
+
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+
+        #articles {
+            display: flex;
+            min-height: 500px;
+        }
+
+        #content {
+            background-color: gray;
+            flex: 600px;
+
+        }
+
+        #sidebar {
+            background-color: tan;
+            flex: 360px;
+
+        }
+
+        .pd-15 {
+            padding: 15px;
+        }
+
+        .pd-10 {
+            padding: 10px;
+        }
+
+        /* ======phan dung chung==== */
+        .text-center {
+            text-align: center;
+            color: black;
+            font-size: 18px;
+        }
+
+        .bg-blue {
+            background-color: blue;
+        }
+    </style>
+    <div id="wrapper">
+        <header class="text-center bg-blue pd-15">
+            Bai tap layout 2 cot- unitop.cv
+        </header>
+        <div id="articles">
+            <div id="content" class="pd-15"> content</div>
+            <div id="sidebar" class="pd-15">sidebar</div>
+        </div>
+        <footer class="text-center bg-blue pd-10">
+            Unitop.vn
+        </footer>
+    </div>
+</body>
+
+</html>

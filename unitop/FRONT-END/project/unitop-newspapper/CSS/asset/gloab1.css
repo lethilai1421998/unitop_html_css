@@ -1,0 +1,13 @@
+/* tổng quan đến chi tiết
+ từ ngoài vào trong
+ từ sau ra trước
+ từ trên xuống dưới
+ từ trái sang phải */
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}

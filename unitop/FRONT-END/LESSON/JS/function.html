@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+  </head>
+
+  <body>
+    <script>
+      // Hàm kiểu tra số chẵn
+      /*  function checkEven(n) {
+              if (n % 5 == 0) return true;
+              return false;
+          }
+          // GỌi hàm
+
+
+          function totalEven(n) {
+              var total = 0;
+              for (var i = 2; i <= n; i++) {
+                  if (checkEven(i)) {
+                      total += i;
+                  }
+              }
+              return total;
+          }
+          alert(totalEven(10));*/
+      //Viết hàm kiêm tra tính chia hết cho k của n( trả về dạng boolean)
+      /* function checkEven(n) {
+             var a = 5;
+             if (n % a == 0) return true;
+             return false;
+         }
+         alert(checkEven(14));*/
+      // viết hàm tính tích các số nguyên chia hết cho k trong đoạn từ 1 đến n
+      /*function checkEven(n) {
+            var a = 5;
+            if (n % a == 0) return true;
+            return false;
+        }
+
+        function totalEven(n) {
+            var total = 1;
+            for (var i = 2; i <= n; i++) {
+                if (checkEven(i)) {
+                    total *= i;
+                }
+            }
+            return total;
+        }
+        alert(totalEven(5));*/
+
+      //3 viết hàm kiểm tra số nguyên tố
+      /* function primeNumber(n) {
+        // Biến cờ hiệu
+        var flag = true;
+
+        // Nếu n bé hơn 2 tức là không phải số nguyên tố
+        if (n < 2) {
+          flag = false;
+        } else {
+          // lặp từ 2 tới n-1
+          for (var i = 2; i < n - 1; i++) {
+            if (n % i == 0) {
+              flag = false;
+              break;
+            }
+          }
+        }
+
+        // Kiểm tra biến flag
+        if (flag == true) {
+          document.write(n + " là số nguyên tố <br/>");
+        } else {
+          document.write(n + " không phải là số nguyên tố <br/>");
+        }
+      }
+      primeNumber(18);*/
+      //4. viết hàm tính tổng các số nguyên tố từ 2-> n
+      function isPrime(num) {
+        if (num < 2) return false;
+        for (var i = 2; i < num; i++) {
+          if (num % i == 0) return false;
+        }
+        return true;
+      }
+      var t = 0;
+      for (var i = 0; i < 100; i++) {
+        if (isPrime(i)) t += i;
+      }
+      document.write(t);
+    </script>
+  </body>
+</html>

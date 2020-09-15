@@ -1,0 +1,40 @@
+* {
+  width: 960px;
+  margin: 0px auto;
+  padding: 10px;
+}
+
+.color {
+  padding: 0;
+  background-color: antiquewhite;
+  color: blue;
+}
+
+.color:hover {
+  background: blueviolet;
+}
+
+h2 {
+  color: aqua;
+}
+
+h2#color-tex {
+  color: antiquewhite;
+}
+
+p {
+  font-size: 18px;
+}
+
+a#text:hover {
+  color: red;
+}
+
+input:checked + label {
+  color: red;
+}
+
+.footer {
+  padding: 0px;
+  margin: 0px auto;
+}

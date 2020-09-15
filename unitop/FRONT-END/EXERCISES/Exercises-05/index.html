@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises 05</title>
+</head>
+
+<body>
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        #wrapper {
+            width: 960px;
+            margin: 0px auto;
+        }
+
+        #article {
+            display: flex;
+        }
+
+        .text-center {
+            text-align: center;
+            color: white;
+        }
+
+        .bg-green {
+            background-color: green;
+        }
+
+        #content {
+            flex: 600px;
+            background: #f3f3f3;
+            min-height: 400px;
+        }
+
+        #sidebar {
+            flex: 360px;
+            background: gray;
+            min-height: 400px;
+
+        }
+
+        .pd-10 {
+            padding: 10px;
+        }
+
+        .pd-15 {
+            padding: 15px;
+        }
+    </style>
+    <div id="wrapper">
+        <header class=" bg-green text-center pd-15">
+            <h1>Layout web 2 cột - float css</h1>
+        </header>
+        <div id="article">
+            <div class="pd-15" id="content"> content</div>
+            <div class="pd-15" id="sidebar"> sidebar</div>
+        </div>
+        <footer class="bg-green text-center pd-10">
+            <h2>unitop.vn</h2>
+        </footer>
+    </div>
+</body>
+
+</html>

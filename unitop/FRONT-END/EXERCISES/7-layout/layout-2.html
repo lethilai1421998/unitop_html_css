@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/golbal.css">
+    <link rel="stylesheet" href="./CSS/reset.css">
+
+
+
+    <title>layout-2
+
+    </title>
+</head>
+
+<body>
+    <style>
+        .cotainer {
+            width: 960px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #header {
+            background-color: #0073aa;
+            flex: 100%;
+        }
+
+        #header h2 {
+            color: white;
+            font-size: 20px;
+            padding: 15px 0;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        #content {
+            min-height: 500px;
+            background-color: #e1e1e1;
+            margin: 0 auto;
+            flex: 100%;
+        }
+
+        #footer {
+            background-color: #23232a;
+            flex: 100%;
+        }
+
+        #footer p {
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+    <div id="header">
+        <div class="container">
+            <h2> unitop.vn</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div id="content">
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <p>hoc lap trinh web di lam</p>
+        </div>
+    </div>
+    <a href="./index.html"> quay lai</a>
+</body>
+
+</html>
